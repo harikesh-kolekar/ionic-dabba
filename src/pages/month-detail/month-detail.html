@@ -1,0 +1,29 @@
+<!--
+  Generated template for the MonthDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>month-detail</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+      
+        <ion-item-sliding class="cssForRoundSLidingItems" *ngFor="let item of currentItems" #slidingItem>
+          <ion-item>
+            <ion-avatar item-start>
+              <img [src]="item.profilePic">
+            </ion-avatar>
+            <h2>{{item.name}}</h2>
+            <p>{{item.about}}</p>
+          </ion-item>
+        </ion-item-sliding>
+      </ion-list>
+</ion-content>
